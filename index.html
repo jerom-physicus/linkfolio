@@ -1,54 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Linkfolio</title>
-</head>
-<body>
-    <h1 class="name">Jeremiah F</h1>
-    <div class="insta-box"> 
-        <img src="instagram.png" class="insta-icon">
-        <h3>Instagram</h3>
-        <p>@jerom_physicus</p>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="create.css" />
+    <link rel="stylesheet" href="create2.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create linkfolio</title>
+  </head>
+  <body>
+    <div class="step1">
+      <div class="step1-create">
+        <img class="logo" src="linkfolio-logo.png" alt="" />
+        <h1>Select your profile image.</h1>
+        <label class="profile-img-bg" for="upload-photo">
+          <img src="user.png" class="profile-img-user" alt="" />
+          <img class="place-img" />
+          <img class="plus-btn" src="plus.png" alt="" />
+          <input class="no" type="file" name="photo" id="upload-photo" />
+        </label>
+        <input
+          class="name-input"
+          type="text"
+          placeholder="Enter your full name"
+        />
+        <button class="nxt-btn">Next</button>
+        <div class="progress-bar">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </div>
-    <div class="about-box">
-        <h1>About me</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it .</p>
-    </div>
-    <div class="wigits">
-      <div class="git-box">
-        <img src="github.png" alt="">
-        <h3>GitHub</h3>
-      </div>
-      <div class="spot-box">
-        <img class="spot-icon" src="spotify.png" alt="">
-        <h3>Spotify</h3><br>
-        <img class="audio" src="audio-waves.png" alt="">
-        <p>Blinding lights</p>
-      </div>
-      <div class="snap-box">
-        <img src="snapchat.png" alt="">
-        <h3>Snapchat</h3>
-      </div>
-      <div class="linkedin-box">
-        <img src="linkedin.png" alt="">
-        <h3>Linkedin</h3>
-      </div>
-      <div class="whatsapp-box">
-        <img src="whatsapp.png" alt="">
-        <h3>Whatsapp</h3>
-      </div>
-     
-      
-    </div>
-    <div class="gmail-box">
-      <img src="gmail.png" alt="">
-      <h3>Gmail</h3>
-      <p>contact me</p>
+    <div class="step2-create">
+      <img class="value-img" />
+      <h1 class="user-name">User_name</h1>
     </div>
 
-    <script type="module" src="app.js"></script>
-</body>
+    <script type="module" src="create.js"></script>
+  </body>
 </html>

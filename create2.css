@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,900&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,700;1,900&family=Roboto:ital,wght@0,300;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+  .step2-create {
+    display: none;
+  }
+  .value-img {
+    background-color: rgb(108, 108, 108);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 15px;
+    object-fit: cover;
+  }
+  .user-name {
+    margin-top: 25px;
+    font-size: 39px;
+  }
+}
