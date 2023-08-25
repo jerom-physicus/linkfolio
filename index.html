@@ -2,14 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="create.css" />
+    <link rel="stylesheet" href="create1.css" />
     <link rel="stylesheet" href="create2.css" />
+    <link rel="stylesheet" href="create3.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create linkfolio</title>
   </head>
   <body>
     <div class="step1">
       <div class="step1-create">
+        <img class="logo1" src="linkfolio-logo.png" alt="" />
+        <h1 class="title1">First, claim your unique link</h1>
+        <p class="dis1">The good one's are still available!</p>
+        <div class="link-int-container">
+          <label class="link-int-lable" for="link-int">linkfolio/</label>
+          <input
+            type="text"
+            id="link-int"
+            placeholder="your-name"
+            onkeypress="return /[0-9a-zA-Z]/i.test(event.key)"
+            maxlength="15"
+          />
+          <img class="green-tick" src="success.png" alt="" />
+        </div>
+        <button class="grab-btn">Grab it now</button>
+        <p class="taken-alert">
+          This username is seems to be taken already... <br />Try something
+          different.
+        </p>
+        <div class="progress-bar1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="step2">
+      <div class="step2-create">
         <img class="logo" src="linkfolio-logo.png" alt="" />
         <h1>Select your profile image.</h1>
         <label class="profile-img-bg" for="upload-photo">
@@ -32,7 +62,7 @@
         </div>
       </div>
     </div>
-    <div class="step2-create">
+    <div class="step3-create">
       <img class="value-img" />
       <h1 class="user-name">User_name</h1>
     </div>
