@@ -143,6 +143,7 @@
   .step1-create {
     display: grid;
     place-items: center;
+    width: 100%;
   }
   .logo {
     width: 80px;
