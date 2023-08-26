@@ -20,8 +20,8 @@
             type="text"
             id="link-int"
             placeholder="your-name"
-            onkeypress="return /[0-9a-zA-Z]/i.test(event.key)"
             maxlength="15"
+            required
           />
           <img class="green-tick" src="success.png" alt="" />
         </div>
@@ -62,9 +62,77 @@
         </div>
       </div>
     </div>
-    <div class="step3-create">
-      <img class="value-img" />
-      <h1 class="user-name">User_name</h1>
+    <div class="step3">
+      <div class="step3-create">
+        <h1 class="title3">
+          Now, select the items you want to add in your page.
+        </h1>
+        <div class="widgets">
+          <div class="instagram">
+            <img src="instagram.png" alt="" />
+            <p>Instagram</p>
+            <label class="add-btn" id="instagram-add-btn" for="instagram-btn"
+              >Add</label
+            >
+            <input
+              style="display: none"
+              id="instagram-btn"
+              type="button"
+              value="OFF"
+            />
+          </div>
+          <div class="instagram">
+            <img src="linkedin.png" alt="" />
+            <p>Linkedin</p>
+            <label class="add-btn" id="linkedin-add-btn" for="linked-btn"
+              >Add</label
+            >
+            <input
+              style="display: none"
+              id="linkedin-btn"
+              type="button"
+              value="OFF"
+            />
+          </div>
+          <div class="instagram">
+            <img src="snapchat.png" alt="" />
+            <p>Snapchat</p>
+            <label class="add-btn" id="snapchat-add-btn" for="snapchat-btn"
+              >Add</label
+            >
+            <input
+              style="display: none"
+              id="snapchat-btn"
+              type="button"
+              value="OFF"
+            />
+          </div>
+          <div class="instagram">
+            <img src="ticon.png" alt="" />
+            <p>Snapchat</p>
+            <div id="telegram-add-btn" class="add-btn">Add</div>
+          </div>
+          <div class="instagram">
+            <img src="github.png" alt="" />
+            <p>Github</p>
+            <div id="github-add-btn" class="add-btn">Add</div>
+          </div>
+          <div class="instagram">
+            <img src="spotify.png" alt="" />
+            <p>Your fav song</p>
+            <div id="spotify-add-btn" class="add-btn">Add</div>
+          </div>
+          <div class="instagram">
+            <img src="bio.png" alt="" />
+            <p>Bio "About you"</p>
+            <div id="bio-add-btn" class="add-btn">Add</div>
+          </div>
+        </div>
+      </div>
+      <div class="step3-btns">
+        <button class="back-3-btn">Back</button>
+        <button class="next-3-btn">Next</button>
+      </div>
     </div>
 
     <script type="module" src="create.js"></script>

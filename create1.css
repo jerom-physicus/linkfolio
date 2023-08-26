@@ -1,5 +1,6 @@
 .step1 {
   display: grid;
+  display: none;
   place-items: center;
 }
 .step1-create {
