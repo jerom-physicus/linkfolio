@@ -242,7 +242,6 @@
     border: black;
     gap: 20px;
     height: fit-content;
-
     grid-template-columns: auto auto;
   }
 }

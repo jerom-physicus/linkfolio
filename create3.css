@@ -8,11 +8,12 @@
 .step3 {
   display: grid;
   place-items: center;
+  display: none;
 }
 .step3-create {
   position: relative;
   top: 100px;
-  width: 600px;
+  width: 700px;
 }
 .title3 {
   font-size: 38px;
@@ -21,43 +22,104 @@
 .widgets {
   position: relative;
   top: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  flex-grow: 0;
+  width: 90%;
+  display: grid;
+  margin: 0px;
+  border: black;
+  gap: 1px;
+  height: fit-content;
+  grid-template-columns: auto auto auto auto;
 }
-.instagram {
+.span1-box {
   position: relative;
-  height: 40px;
-  width: 250px;
   display: flex;
-  margin-right: 50px;
-  margin-bottom: 30px;
-  border-radius: 20px 7px 7px 20px;
-  background-color: rgb(243, 243, 243);
+  border-radius: 18px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+  height: 60px;
+  width: 150px;
+  margin: 10px;
+  box-shadow: 0px 11px 25px -2px rgba(0, 0, 0, 0.11);
 }
-.instagram img {
-  height: 40px;
-}
-
-.instagram p {
+.widgit-logo {
   position: relative;
-  font-weight: 500;
-  color: rgb(84, 85, 85);
-  top: 8px;
-  left: 10px;
+  width: 35px;
+  height: 35px;
+  top: 12px;
+  left: 12px;
 }
-.add-btn {
+.span1-box input,
+.span2-box input,
+.span3-box input {
+  display: none;
+}
+.instagram-close,
+.linkedin-close,
+.github-close,
+.whatsapp-close,
+.bio-close {
   position: absolute;
-  height: 40px;
-  padding-top: 9px;
+  left: 88%;
+  background-color: black;
+  width: 19px;
+  height: 19px;
+  padding: 4px;
+  border-radius: 50%;
+  display: none;
+}
+.span1-box h3 {
+  position: relative;
+  top: 19px;
+  left: 20px;
+  font-size: 17px;
+}
+.span2-box {
+  position: relative;
+  display: flex;
+  border-radius: 18px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+  height: 140px;
+  width: 150px;
+  margin: 10px;
+  box-shadow: 0px 11px 25px -2px rgba(0, 0, 0, 0.11);
+  grid-row: span 2;
+}
+.span2-box h3,
+.span3-box h3 {
+  position: relative;
+  top: 19px;
+  left: 20px;
+  font-size: 17px;
+}
+.span3-box h2 {
+  position: relative;
+  top: 19px;
+  left: 100px;
+  font-size: 17px;
+  color: #616161;
+}
+.span2-box h2 {
+  font-size: 20px;
+  position: absolute;
+  top: 55px;
+  color: #505050;
+  width: 50%;
   text-align: center;
-  border-radius: 7px;
-  color: rgb(255, 255, 255);
-  width: 70px;
-  background-color: rgb(186, 186, 186);
-  left: 72%;
-  user-select: none;
+  left: 50%;
+  transform: translate(-50%);
+}
+.span3-box {
+  position: relative;
+  display: flex;
+  border-radius: 18px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+  height: 60px;
+  width: 320px;
+  margin: 10px;
+  grid-column: span 2;
+  box-shadow: 0px 11px 25px -2px rgba(0, 0, 0, 0.11);
 }
 .green {
   background-color: #24e23e;
@@ -109,28 +171,28 @@
     letter-spacing: -1px;
     width: 90%;
   }
-  .widgets {
-    top: 20px;
-    display: grid;
-    height: 75vh;
-    place-items: center;
-    overflow-y: scroll;
-  }
-  .instagram {
-    width: 300px;
-    margin-right: unset;
-  }
-  .add-btn {
-    left: 76%;
-  }
+
   .next-3-btn {
     right: 20px;
+    width: 130px;
   }
   .back-3-btn {
     left: 20px;
+    width: 130px;
   }
   .step3-btns {
     width: 100%;
     height: 60px;
+  }
+  .widgets {
+    position: relative;
+    top: 20px;
+    width: fit-content;
+    display: grid;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 0px;
+    height: fit-content;
+    grid-template-columns: auto auto;
   }
 }

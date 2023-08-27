@@ -5,9 +5,7 @@
   font-family: "DM Sans", sans-serif;
   box-sizing: border-box;
 }
-.step {
-  display: none;
-}
+
 .step2-create {
   transition: 0.2s;
 }
@@ -156,7 +154,7 @@
     top: 60px;
   }
   .place-img {
-    top: 60px;
+    top: 80px;
   }
   .name-input {
     top: 80px;

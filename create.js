@@ -57,9 +57,9 @@ document.getElementById("upload-photo").addEventListener("input", function () {
 });
 
 document.querySelector(".nxt-btn").addEventListener("click", function () {
-  document.querySelector(".step1-create").style.display = "none";
-  document.querySelector(".step2-create").style.display = "none";
-  document.querySelector(".step3").style.display = "block";
+  document.querySelector(".step1").style.display = "none";
+  document.querySelector(".step2").style.display = "none";
+  document.querySelector(".step3").style.display = "grid";
 });
 // function step2() {
 //   let inputPhoto = document.getElementById("upload-photo").files[0];
@@ -70,70 +70,119 @@ document.querySelector(".nxt-btn").addEventListener("click", function () {
 
 //--------------------------------------step3-----------------------------------------//
 
-document
-  .getElementById("instagram-add-btn")
-  .addEventListener("click", function () {
-    let btn = document.getElementById("instagram-add-btn");
-    btn.classList.toggle("green");
-    //---------append him------------//
-    let toggle = document.getElementById("instagram-btn");
-    if (toggle.value == "OFF") {
-      toggle.value = "ON";
-      localStorage.setItem("instagram", " instagram");
-    } else if (toggle.value == "ON") {
-      toggle.value = "OFF";
-      localStorage.removeItem("instagram");
-    }
-  });
-document
-  .getElementById("linkedin-add-btn")
-  .addEventListener("click", function () {
-    let btn = document.getElementById("linkedin-add-btn");
-    btn.classList.toggle("green");
-    //---------append him------------//
-    let toggle = document.getElementById("linkedin-btn");
-    if (toggle.value == "OFF") {
-      toggle.value = "ON";
-      localStorage.setItem("linkedin", " linkedin");
-    } else if (toggle.value == "ON") {
-      toggle.value = "OFF";
-      localStorage.removeItem("linkedin");
-    }
-  });
-document
-  .getElementById("snapchat-add-btn")
-  .addEventListener("click", function () {
-    let btn = document.getElementById("snapchat-add-btn");
-    btn.classList.toggle("green");
-    //---------append him------------//
-    let toggle = document.getElementById("snapchat-btn");
-    if (toggle.value == "OFF") {
-      toggle.value = "ON";
-      localStorage.setItem("snapchat", " snapchat");
-    } else if (toggle.value == "ON") {
-      toggle.value = "OFF";
-      localStorage.removeItem("snapchat");
-    }
-  });
-document
-  .getElementById("telegram-add-btn")
-  .addEventListener("click", function () {
-    let btn = document.getElementById("telegram-add-btn");
-    btn.classList.toggle("green");
-  });
-document
-  .getElementById("github-add-btn")
-  .addEventListener("click", function () {
-    let btn = document.getElementById("github-add-btn");
-    btn.classList.toggle("green");
-  });
-document
-  .getElementById("spotify-add-btn")
-  .addEventListener("click", function () {
-    let btn = document.getElementById("spotify-add-btn");
-    btn.classList.toggle("green");
-  });
-document.getElementById("bio-add-btn").addEventListener("click", function () {
-  let btn = document.getElementById("bio-add-btn");
+document.getElementById("instagram").addEventListener("click", function () {
+  let btn = document.getElementById("instagram");
   btn.classList.toggle("green");
+  //---------append him------------//
+  let toggle = document.getElementById("instagram-int");
+  if (toggle.value == "OFF") {
+    toggle.value = "ON";
+    document.querySelector(".instagram-close").style.display = "block";
+    localStorage.setItem("instagram", " instagram");
+  } else if (toggle.value == "ON") {
+    toggle.value = "OFF";
+    document.querySelector(".instagram-close").style.display = "none";
+    localStorage.removeItem("instagram");
+  }
 });
+document.getElementById("linkedin-int").addEventListener("click", function () {
+  let btn = document.getElementById("linkedin");
+  btn.classList.toggle("green");
+  //---------append him------------//
+  let toggle = document.getElementById("linkedin-int");
+  if (toggle.value == "OFF") {
+    toggle.value = "ON";
+    document.querySelector(".linkedin-close").style.display = "block";
+
+    localStorage.setItem("linkedin", " linkedin");
+  } else if (toggle.value == "ON") {
+    toggle.value = "OFF";
+    localStorage.removeItem("linkedin");
+    document.querySelector(".linkedin-close").style.display = "none";
+  }
+});
+document.getElementById("github-int").addEventListener("click", function () {
+  let btn = document.getElementById("github");
+  btn.classList.toggle("green");
+  //---------append him------------//
+  let toggle = document.getElementById("github-int");
+  if (toggle.value == "OFF") {
+    document.querySelector(".github-close").style.display = "block";
+
+    toggle.value = "ON";
+    localStorage.setItem("github", " github");
+  } else if (toggle.value == "ON") {
+    toggle.value = "OFF";
+    localStorage.removeItem("github");
+    document.querySelector(".github-close").style.display = "none";
+  }
+});
+document.getElementById("whatsapp-int").addEventListener("click", function () {
+  let btn = document.getElementById("whatsapp");
+  btn.classList.toggle("green");
+  //---------append him------------//
+  let toggle = document.getElementById("whatsapp-int");
+  if (toggle.value == "OFF") {
+    document.querySelector(".whatsapp-close").style.display = "block";
+
+    toggle.value = "ON";
+    localStorage.setItem("whatsapp", " whatsapp");
+  } else if (toggle.value == "ON") {
+    toggle.value = "OFF";
+    localStorage.removeItem("whatsapp");
+    document.querySelector(".whatsapp-close").style.display = "none";
+  }
+});
+document.getElementById("bio-int").addEventListener("click", function () {
+  let btn = document.getElementById("bio");
+  btn.classList.toggle("green");
+  //---------append him------------//
+  let toggle = document.getElementById("bio-int");
+  if (toggle.value == "OFF") {
+    document.querySelector(".bio-close").style.display = "block";
+
+    toggle.value = "ON";
+    localStorage.setItem("bio", " bio");
+  } else if (toggle.value == "ON") {
+    toggle.value = "OFF";
+    localStorage.removeItem("bio");
+    document.querySelector(".bio-close").style.display = "none";
+  }
+});
+// document
+//   .getElementById("snapchat-add-btn")
+//   .addEventListener("click", function () {
+//     let btn = document.getElementById("snapchat-add-btn");
+//     btn.classList.toggle("green");
+//     //---------append him------------//
+//     let toggle = document.getElementById("snapchat-btn");
+//     if (toggle.value == "OFF") {
+//       toggle.value = "ON";
+//       localStorage.setItem("snapchat", " snapchat");
+//     } else if (toggle.value == "ON") {
+//       toggle.value = "OFF";
+//       localStorage.removeItem("snapchat");
+//     }
+//   });
+// document
+//   .getElementById("telegram-add-btn")
+//   .addEventListener("click", function () {
+//     let btn = document.getElementById("telegram-add-btn");
+//     btn.classList.toggle("green");
+//   });
+// document
+//   .getElementById("github-add-btn")
+//   .addEventListener("click", function () {
+//     let btn = document.getElementById("github-add-btn");
+//     btn.classList.toggle("green");
+//   });
+// document
+//   .getElementById("spotify-add-btn")
+//   .addEventListener("click", function () {
+//     let btn = document.getElementById("spotify-add-btn");
+//     btn.classList.toggle("green");
+//   });
+// document.getElementById("bio-add-btn").addEventListener("click", function () {
+//   let btn = document.getElementById("bio-add-btn");
+//   btn.classList.toggle("green");
+// });
