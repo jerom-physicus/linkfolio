@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,900&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,700;1,900&family=Roboto:ital,wght@0,300;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+}
+.step3 {
+  display: grid;
+  place-items: center;
+}
+.step3-create {
+  position: relative;
+  top: 50px;
+  width: 700px;
+}
+.title3 {
+  font-size: 38px;
+  line-height: 50px;
+}
+.widgets {
+  position: relative;
+  top: 40px;
+  width: 90%;
+  display: grid;
+  margin: 0px;
+  border: black;
+  gap: 1px;
+  height: fit-content;
+  grid-template-columns: auto auto auto auto;
+}
+.span1-box {
+  position: relative;
+  display: flex;
+  border-radius: 18px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+  height: 60px;
+  width: 150px;
+  margin: 10px;
+  box-shadow: 0px 11px 25px -2px rgba(0, 0, 0, 0.11);
+}
+.widgit-logo {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  top: 12px;
+  left: 12px;
+}
+.spotify-logo {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  top: 12px;
+  left: 12px;
+  background-color: white;
+  border-radius: 50%;
+}
+.widgit-logo {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  top: 12px;
+  left: 12px;
+}
+.span1-box input,
+.span2-box input,
+.span3-box input {
+  display: none;
+}
+.instagram-close,
+.linkedin-close,
+.github-close,
+.whatsapp-close,
+.bio-close,
+.x-close,
+.facebook-close,
+.spotify-close,
+.custom-1-close,
+.custom-2-close,
+.custom-3-close {
+  position: absolute;
+  left: 88%;
+  background-color: black;
+  width: 19px;
+  height: 19px;
+  padding: 4px;
+  border-radius: 50%;
+  display: none;
+}
+.gmail-close,
+.custom-4-close {
+  position: absolute;
+  left: 94.5%;
+  background-color: black;
+  width: 19px;
+  height: 19px;
+  padding: 4px;
+  border-radius: 50%;
+  display: none;
+}
+.span1-box h3 {
+  position: relative;
+  top: 19px;
+  left: 20px;
+  font-size: 17px;
+}
+.span2-box {
+  position: relative;
+  display: flex;
+  border-radius: 18px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+  height: 140px;
+  width: 150px;
+  margin: 10px;
+  box-shadow: 0px 11px 25px -2px rgba(0, 0, 0, 0.11);
+  grid-row: span 2;
+}
+.span2-box h3,
+.span3-box h3 {
+  position: relative;
+  top: 19px;
+  left: 20px;
+  font-size: 17px;
+}
+.span3-box h2 {
+  position: relative;
+  top: 19px;
+  left: 100px;
+  font-size: 17px;
+  color: #616161;
+}
+.span2-box h4 {
+  position: absolute;
+  bottom: 20px;
+  font-size: 17px;
+  color: #616161;
+  left: 20px;
+}
+.spot-wave {
+  width: 65px;
+  height: 50px;
+  position: absolute;
+  left: 45px;
+  top: 47px;
+}
+.span2-box h2 {
+  font-size: 20px;
+  position: absolute;
+  top: 55px;
+  color: #505050;
+  width: 50%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+}
+.span3-box {
+  position: relative;
+  display: flex;
+  border-radius: 18px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+  height: 60px;
+  width: 320px;
+  margin: 10px;
+  grid-column: span 2;
+  box-shadow: 0px 11px 25px -2px rgba(0, 0, 0, 0.11);
+}
+.green {
+  background-color: #24e23e;
+}
+.next-3-btn {
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 7px;
+  right: 0;
+  border-style: none;
+}
+.back-3-btn {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 7px;
+  left: 0;
+  background-color: white;
+  border-style: none;
+  border: black solid 1px;
+}
+.step3-btns {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  height: 100px;
+  width: 500px;
+  box-shadow: 0px -37px 24px 10px rgba(255, 255, 255, 0.54);
+}
+@media only screen and (max-width: 600px) {
+  .green {
+    background-color: #24e23e;
+  }
+  .step3-create {
+    top: 20px;
+    width: 100%;
+  }
+  .title3 {
+    position: relative;
+    left: 20px;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    width: 90%;
+  }
+
+  .next-3-btn {
+    right: 20px;
+    width: 130px;
+  }
+  .back-3-btn {
+    left: 20px;
+    width: 130px;
+  }
+  .step3-btns {
+    width: 100%;
+    height: 60px;
+  }
+  .widgets {
+    position: relative;
+    top: 20px;
+    width: fit-content;
+    height: 70vh;
+    display: grid;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 0px;
+    overflow-y: scroll;
+    grid-template-columns: auto auto;
+  }
+}

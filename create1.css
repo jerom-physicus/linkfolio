@@ -1,0 +1,171 @@
+.step1 {
+  display: grid;
+  place-items: center;
+  display: none;
+}
+.step1-create {
+  width: 500px;
+}
+.logo1 {
+  top: 100px;
+  width: 80px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.title1 {
+  position: relative;
+  top: 140px;
+  font-size: 40px;
+}
+.dis1 {
+  position: relative;
+  top: 160px;
+  font-size: 20px;
+  color: rgb(86, 86, 86);
+}
+.link-int-container {
+  position: relative;
+  top: 200px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+}
+.link-int-lable {
+  position: relative;
+  padding-left: 20px;
+  top: 10px;
+  background-color: rgb(240, 240, 240);
+  color: rgb(75, 75, 75);
+  font-weight: 500;
+  cursor: text;
+}
+.link-int-container input {
+  position: relative;
+  border-style: none;
+  border: 0;
+  outline: 0;
+  top: 10px;
+  font-size: 17px;
+  font-weight: 500px;
+  background-color: rgb(240, 240, 240);
+}
+.green-tick {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  width: 20px;
+  display: none;
+}
+.grab-btn {
+  position: relative;
+  top: 230px;
+  height: 45px;
+  width: 100%;
+  border-style: none;
+  background-color: rgb(24, 24, 24);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 600;
+  display: none;
+}
+.taken-alert {
+  position: relative;
+  top: 220px;
+  color: red;
+  display: none;
+}
+.step1-create {
+  transition: 0.2s;
+  transition: ease-in;
+}
+.progress-bar1 {
+  position: relative;
+  height: 10px;
+  width: 60%;
+  display: flex;
+  gap: 10%;
+  left: 50%;
+  top: 400px;
+  transform: translate(-50%);
+}
+.progress-bar1 :nth-child(1) {
+  position: relative;
+  top: 0px;
+  height: 8px;
+  width: 20%;
+  left: 0;
+  background-color: rgb(104, 104, 250);
+  border-radius: 3px;
+}
+.progress-bar1 :nth-child(2) {
+  position: relative;
+  top: 0px;
+  background-color: rgb(210, 210, 210);
+  height: 8px;
+  width: 20%;
+  left: 0;
+  border-radius: 3px;
+}
+.progress-bar1 :nth-child(3) {
+  position: relative;
+  top: 0px;
+  background-color: rgb(210, 210, 210);
+  height: 8px;
+  width: 20%;
+  left: 0;
+  border-radius: 3px;
+}
+.progress-bar1 :nth-child(4) {
+  position: relative;
+  top: 0px;
+  background-color: rgb(210, 210, 210);
+  height: 8px;
+  width: 20%;
+  left: 0;
+  border-radius: 3px;
+}
+@media only screen and (max-width: 600px) {
+  .step1-create {
+    width: 100%;
+  }
+  .logo1 {
+    top: 40px;
+  }
+  .title1 {
+    top: 80px;
+    left: 40px;
+    max-width: 90%;
+    font-size: 35px;
+  }
+  .dis1 {
+    top: 100px;
+    max-width: 90%;
+    left: 40px;
+    font-size: 18px;
+  }
+  .link-int-container {
+    width: 80%;
+    left: 50%;
+    top: 150px;
+    transform: translate(-50%);
+  }
+  .grab-btn {
+    width: 80%;
+    left: 50%;
+    top: 180px;
+    transform: translate(-50%);
+  }
+  .progress-bar1 {
+    position: absolute;
+    top: unset;
+    bottom: 40px;
+  }
+  .taken-alert {
+    top: 180px;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
