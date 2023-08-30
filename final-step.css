@@ -25,7 +25,7 @@
   position: relative;
   width: 400px;
   height: fit-content;
-  border: rgb(115, 115, 115) solid 1px;
+  border: rgb(215, 215, 215) solid 1px;
   border-radius: 10px;
   top: 20px;
   left: 50px;
@@ -170,7 +170,7 @@
   position: relative;
   width: 400px;
   height: fit-content;
-  border: rgb(115, 115, 115) solid 1px;
+  border: rgb(215, 215, 215) solid 1px;
   border-radius: 10px;
   top: 20px;
   left: 50px;
@@ -181,11 +181,12 @@
 @media only screen and (max-width: 800px) {
   .title {
     font-size: 30px;
-    width: 100%;
+    width: 95%;
     left: 10px;
+    background-color: aqua;
   }
   .social-media {
-    width: 100%;
+    width: 95%;
     left: 10px;
   }
   .widgits {
