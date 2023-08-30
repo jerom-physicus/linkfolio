@@ -15,7 +15,7 @@
   font-size: 40px;
   font-weight: 700;
   left: 50px;
-  width: 800px;
+  width: 1000px;
 }
 .widgits {
   display: flex;
@@ -24,14 +24,13 @@
 .social-media {
   position: relative;
   width: 400px;
-  height: 550px;
+  height: fit-content;
   border: rgb(115, 115, 115) solid 1px;
   border-radius: 10px;
   top: 20px;
   left: 50px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 .social-media h1 {
   text-align: center;
@@ -42,6 +41,7 @@
   left: 30px;
   border-radius: 7px;
   display: flex;
+  margin-bottom: 20px;
 }
 .socials img {
   width: 40px;
@@ -53,6 +53,7 @@
   position: relative;
   left: 10px;
   top: 4px;
+  width: 65%;
   border-radius: 7px;
   border-style: none;
   padding: 10px;
@@ -68,4 +69,138 @@
   border-style: none;
   width: 80px;
   border-radius: 7px;
+}
+.bio {
+  display: flex;
+  flex-direction: column;
+}
+.bio img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 4px;
+  left: 30px;
+}
+.bio textarea {
+  position: relative;
+  top: 15px;
+  width: 80%;
+  left: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.bio button {
+  position: relative;
+  top: 20px;
+  left: 30px;
+  background-color: rgb(255, 89, 89);
+  color: white;
+  border-style: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 7px;
+}
+.custom1 img,
+.custom2 img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 4px;
+  left: 30px;
+}
+.custom1 label,
+.custom2 label {
+  position: relative;
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+  left: 50px;
+  top: -10px;
+  background-color: rgb(95, 95, 255);
+}
+.custom1 h2,
+.custom2 h2 {
+  position: relative;
+  left: 30px;
+}
+.custom1 input,
+.custom2 input {
+  position: relative;
+  left: 60px;
+  top: -10px;
+  height: 40px;
+  position: relative;
+  border-radius: 7px;
+  border-style: none;
+  padding: 10px;
+  height: 40px;
+  background-color: rgb(235, 235, 235);
+}
+.custom1 button {
+  position: relative;
+  top: 10px;
+  left: 70px;
+  background-color: rgb(255, 89, 89);
+  color: white;
+  border-style: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 7px;
+}
+.custom2 button {
+  position: relative;
+  top: 40px;
+  left: -220px;
+  background-color: rgb(255, 89, 89);
+  color: white;
+  border-style: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 7px;
+}
+.custom2 {
+  margin-bottom: 25px;
+}
+.custom1 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.social-custom {
+  position: relative;
+  width: 400px;
+  height: fit-content;
+  border: rgb(115, 115, 115) solid 1px;
+  border-radius: 10px;
+  top: 20px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 30px;
+    width: 100%;
+    left: 10px;
+  }
+  .social-media {
+    width: 100%;
+    left: 10px;
+  }
+  .widgits {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .custom1 input,
+  .custom2 input {
+    width: 38%;
+  }
+  .social-custom {
+    left: 10px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
 }
