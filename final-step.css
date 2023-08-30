@@ -183,10 +183,9 @@
     font-size: 30px;
     width: 95%;
     left: 10px;
-    background-color: aqua;
   }
   .social-media {
-    width: 95%;
+    width: 91%;
     left: 5%;
   }
   .widgits {
@@ -197,11 +196,21 @@
   }
   .custom1 input,
   .custom2 input {
-    width: 38%;
+    width: 45%;
+    left: 15px;
   }
+
   .social-custom {
-    width: 95%;
+    width: 91%;
     left: 5%;
     margin-bottom: 100px;
+  }
+  .custom1 img,
+  .custom2 img {
+    left: 10px;
+  }
+  .custom1 label,
+  .custom2 label {
+    left: 15px;
   }
 }
