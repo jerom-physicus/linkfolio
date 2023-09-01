@@ -8,55 +8,53 @@
   </head>
   <body>
     <div class="main">
-      <h1 class="title">
-        You are only one step there to complete your linkfolio.
-      </h1>
+      <h1 class="title">Final step, please fill out the following.</h1>
       <div class="widgits">
         <div class="social-media">
           <h1>social media</h1>
           <div class="socials" id="instagram" style="display: none">
             <img src="instagram.png" alt="" />
-            <input type="text" placeholder="user-name" />
+            <input type="text" placeholder="user-name" id="instagram-int" />
           </div>
           <div class="socials" id="linkedin" style="display: none">
             <img src="linkedin.png" alt="" />
-            <input type="text" placeholder="user-name" />
+            <input type="text" placeholder="Profile-URL" id="linkedin-int" />
           </div>
           <div class="socials" id="facebook" style="display: none">
             <img src="facebook.png" alt="" />
-            <input type="text" placeholder="user-name" />
+            <input type="text" placeholder="Profile-URL" id="facebook-int" />
           </div>
           <div class="socials" id="telegram" style="display: none">
             <img src="ticon.png" alt="" />
-            <input type="text" placeholder="user-name" />
+            <input type="text" placeholder="Profile-URL" id="telegram-int" />
           </div>
           <div class="socials" id="twitter" style="display: none">
             <img src="twitter.png" alt="" />
-            <input type="text" placeholder="user-name" />
+            <input type="text" placeholder="Profile-URL" id="twitter-int" />
           </div>
           <div class="socials" id="github" style="display: none">
             <img src="github.png" alt="" />
-            <input type="text" placeholder="user-name" />
+            <input type="text" placeholder="user-name" id="github-int" />
           </div>
           <div class="socials" id="whatsapp" style="display: none">
             <img src="whatsapp.png" alt="" />
-            <input type="text" placeholder="user-name" />
+            <input type="number" placeholder="Phone-number" id="whatsapp-int" />
           </div>
         </div>
         <div class="social-media">
           <h1>Others</h1>
           <div class="socials" id="spotify" style="display: none">
             <img src="spotify.png" alt="" />
-            <input type="text" placeholder="Song-link-URL" />
+            <input type="text" placeholder="Song-link-URL" id="spotify-int" />
           </div>
           <div class="socials" id="gmail" style="display: none">
             <img src="gmail.png" alt="" />
-            <input type="text" placeholder="Gmail-address" />
+            <input type="text" placeholder="Gmail-address" id="gmail-int" />
           </div>
           <div class="bio" id="bio" style="display: none">
             <img src="bio.png" alt="" />
             <textarea
-              id=""
+              id="bio-int"
               cols="30"
               rows="10"
               placeholder="About your self"
@@ -69,12 +67,11 @@
             <img src="custom.png" alt="" />
             <input style="display: none" type="file" id="custom-1" />
             <label for="custom-1">Add image</label>
-            <input type="text" placeholder="Custom-URL" />
             <input
-              style="top: 10px"
               type="text"
-              placeholder="About this"
-              maxlength="40"
+              placeholder="Title-name"
+            />
+            <input type="text" placeholder="Custom-URL"               style="top: 7px"
             />
           </div>
           <div class="custom2" id="custom-2" style="display: none">
@@ -82,28 +79,25 @@
             <img src="custom.png" alt="" />
             <input style="display: none" type="file" id="custom-1" />
             <label for="custom-1">Add image</label>
-            <input type="text" placeholder="Custom-URL" />
+            <input type="text" placeholder="Title-name" />
+            <input type="text" placeholder="Custom-URL"               style="top: 7px"
+            />
           </div>
           <div class="custom2" id="custom-3" style="display: none">
             <h2>Custom-3</h2>
             <img src="custom.png" alt="" />
             <input style="display: none" type="file" id="custom-1" />
             <label for="custom-1">Add image</label>
-            <input type="text" placeholder="Custom-URL" />
+            <input type="text" placeholder="Title-name" />
+            <input type="text" placeholder="Custom-URL"               style="top: 7px"
+            />
           </div>
-          <div class="custom2" id="custom-4" style="display: none">
-            <h2>Custom-4</h2>
-            <img src="custom.png" alt="" />
-            <input style="display: none" type="file" id="custom-1" />
-            <label for="custom-1">Add image</label>
-            <input type="text" placeholder="Custom-URL" />
-          </div>
-        </div>
+         
       </div>
     </div>
     <div class="step3-btns">
       <button class="back-3-btn">Back</button>
-      <button id="next-3-btn" class="next-3-btn">Next</button>
+      <button id="execute" class="next-3-btn">Next</button>
     </div>
   </body>
   <script type="module" src="final-step.js"></script>

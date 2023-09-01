@@ -77,8 +77,7 @@
 .facebook-close,
 .spotify-close,
 .custom-1-close,
-.custom-2-close,
-.custom-3-close {
+.custom-2-close {
   position: absolute;
   left: 88%;
   background-color: black;
@@ -89,7 +88,7 @@
   display: none;
 }
 .gmail-close,
-.custom-4-close {
+.custom-3-close {
   position: absolute;
   left: 94.5%;
   background-color: black;

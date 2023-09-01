@@ -45,6 +45,8 @@ document.getElementById("link-int").addEventListener("input", function () {
 document.querySelector(".grab-btn").addEventListener("click", function () {
   document.querySelector(".step2").style.display = "grid";
   document.querySelector(".step1").style.display = "none";
+  let link_int = document.getElementById("link-int").value;
+  localStorage.setItem("uid", link_int);
 });
 
 //--------------------------Step2-----------------------------------------------------------------//
@@ -213,6 +215,7 @@ document.getElementById("spotify-int").addEventListener("click", function () {
     document.querySelector(".spotify-close").style.display = "none";
   }
 });
+
 document.getElementById("custom-1-int").addEventListener("click", function () {
   let btn = document.getElementById("custom-1");
   btn.classList.toggle("green");
@@ -259,22 +262,6 @@ document.getElementById("custom-3-int").addEventListener("click", function () {
     toggle.value = "OFF";
     localStorage.removeItem("custom-3");
     document.querySelector(".custom-3-close").style.display = "none";
-  }
-});
-document.getElementById("custom-4-int").addEventListener("click", function () {
-  let btn = document.getElementById("custom-4");
-  btn.classList.toggle("green");
-  //---------append him------------//
-  let toggle = document.getElementById("custom-4-int");
-  if (toggle.value == "OFF") {
-    document.querySelector(".custom-4-close").style.display = "block";
-
-    toggle.value = "ON";
-    localStorage.setItem("custom-4", " custom-4");
-  } else if (toggle.value == "ON") {
-    toggle.value = "OFF";
-    localStorage.removeItem("custom-4");
-    document.querySelector(".custom-4-close").style.display = "none";
   }
 });
 
